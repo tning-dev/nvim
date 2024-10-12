@@ -278,6 +278,7 @@ local cmp_nvim_lsp_signature_help = { 'hrsh7th/cmp-nvim-lsp-signature-help' }
 local neodev = { 'folke/neodev.nvim', ft = 'lua' }
 -- local plenary = { 'nvim-lua/plenary.nvim' }
 
+--[[
 local cmp_git = {
     'petertriho/cmp-git',
     ft = { 'gitcommit', 'octo' },
@@ -410,6 +411,7 @@ local cmp_git = {
         )
     end,
 }
+]]--
 
 local crates = {
     "saecki/crates.nvim",
@@ -445,7 +447,7 @@ local nvim_cmp = {
         tsnippets,
         friendly_snippets,
         cmp_nvim_lsp_signature_help,
-        cmp_git,
+        --cmp_git,
         cmp_path,
         cmp_buffer,
         crates,
