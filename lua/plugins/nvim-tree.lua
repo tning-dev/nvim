@@ -8,7 +8,11 @@ local nvim_tree = {
   },
   config = function()
     vim.opt.termguicolors = true
-    require("nvim-tree").setup {}
+    require("nvim-tree").setup {
+	    view = {
+		    width = 35,
+	    },
+    }
   end
 }
 
