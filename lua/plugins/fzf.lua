@@ -4,6 +4,16 @@ local fzf = {
 	lazy=true
 }
 
+local function find_tag()
+    if vim.bo.filetype == 'thrift' then
+        vim.cmd('silent FZFBTags')
+    elseif vim.bo.filetype == 'NvimTree' or vim.bo.filetype == 'neo-tree' then
+        vim.cmd('silent FZFBLines')
+    else
+        vim.fn['aerial#fzf']()
+    end
+end
+
 local fzf_vim = {
     'junegunn/fzf.vim',
     -- event = 'VeryLazy',
