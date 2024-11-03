@@ -30,6 +30,7 @@ local mason = {
             'json-lsp',
             'json-to-struct',
             'lua-language-server',
+            'java-language-server',
             'luacheck',
             'luaformatter',
             'python-lsp-server',
