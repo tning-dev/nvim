@@ -6,3 +6,4 @@ vim.g.codeverse_no_map_tab = true
 vim.g.codeverse_disable_bindings = true
 require("config.lazy")
 require("keybinding")
+require("basic")
