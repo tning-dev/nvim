@@ -35,6 +35,12 @@ local fzf_vim = {
         { '<leader>fT',       ':FZFTags<cr>',       silent = true, remap = false,  desc = 'fzf: ctags' },
         { '<leader>fm',       ':FZFMarks<cr>',      silent = true, remap = false,  desc = 'fzf: marks' },
         { '<leader>ft',       find_tag, 	    silent = true, remap = false,  desc = 'fzf: aerial' },
+
+
+        { '<leader><leader>',       '<plug>(fzf-maps-n)', mode = 'n',	    silent = true, remap = false,  desc = 'fzf: keymap' },
+        { '<leader><leader>',       '<plug>(fzf-maps-x)', mode = 'x', 	    silent = true, remap = false,  desc = 'fzf: keymap' },
+        { '<leader><leader>',       '<plug>(fzf-maps-o)', mode = 'o', 	    silent = true, remap = false,  desc = 'fzf: keymap' },
+
     },
 }
 
