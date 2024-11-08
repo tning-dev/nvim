@@ -133,7 +133,6 @@ local function cmp_config()
             -- { name = 'snippy' }, -- For snippy users.
         }, {
             { name = 'buffer' },
-	    { name = "codeverse"} -- codeverse Source
         }),
         formatting = {
             format = lspkind.cmp_format({
@@ -151,10 +150,6 @@ local function cmp_config()
             })
         },
         preselect = cmp.PreselectMode.None,
-	experimental = {
-  		-- 开启虚拟文本 for codeverse Source
-    		ghost_text = true
-  	}
     })
 
     -- Set configuration for specific filetype.
