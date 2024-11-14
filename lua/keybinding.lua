@@ -12,3 +12,6 @@ vim.keymap.set('v', '<', '<gv', { silent = true, remap = false })
 -- bufferline
 vim.keymap.set('n', '<s-h>', '<cmd>BufferLineCyclePrev<cr>', opt)
 vim.keymap.set('n', '<s-l>', '<cmd>BufferLineCycleNext<cr>', opt)
+
+--blame toggle
+vim.keymap.set('n', '<leader>bt', '<cmd>BlameToggle<cr>', opt)
