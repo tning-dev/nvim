@@ -16,6 +16,8 @@ local mason = {
         vim.cmd('MasonUpdate')
 
         local pkg = {
+			'java-test',
+			'java-debug-adapter',
             'bash-language-server',
             'gofumpt',
             'goimports',
