@@ -18,7 +18,15 @@ local neo_tree = {
                         vim.opt.relativenumber = true
                     end,
                 },
+		buffers = {
+			follow_current_file = {
+				enabled = true, -- 开启跟随当前文件功能
+			}
+		},
 		filesystem = {
+			follow_current_file = {
+				enabled = true, -- 开启跟随当前文件功能
+			},
 		    window = {
         		mappings = {
                     	-- disable fuzzy finder
