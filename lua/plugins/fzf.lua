@@ -8,7 +8,7 @@ local fzf = {
 
 local function find_tag()
 	if vim.bo.filetype == 'neo-tree' or vim.bo.filetype == 'aerial' then
-		vim.cmd('silent FZFBLines')
+		vim.cmd(':FZFBLines')
 	else
 		vim.cmd('call aerial#fzf()')
 	end
