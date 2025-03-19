@@ -1,6 +1,8 @@
 local fzf = {
 	"junegunn/fzf",
-	build = ":call fzf#install()",
+	build = function ()
+		vim.fn['fzf#install']()
+	end,
 	lazy=true
 }
 
