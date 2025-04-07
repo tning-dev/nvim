@@ -14,7 +14,6 @@ local mason = {
     "williamboman/mason.nvim",
     build = function()
         vim.cmd('MasonUpdate')
-
         local pkg = {
 			'java-test',
 			'java-debug-adapter',
@@ -23,10 +22,6 @@ local mason = {
             'goimports',
             'golines',
             'gotests',
-            -- do not install golangci-lint, it will generate
-            -- an error "Running error: context loading failed: no go files to
-            -- analyze" always
-            -- 'golangci-lint',
             'iferr',
             'impl',
             'json-lsp',
@@ -42,8 +37,7 @@ local mason = {
             'vim-language-server',
             'yaml-language-server' }
         local str = table.concat(pkg, ' ')
-        vim.cmd(
-            'MasonInstall ' .. str)
+        vim.cmd('MasonInstall ' .. str)
     end,
     config = function()
         require("mason").setup({

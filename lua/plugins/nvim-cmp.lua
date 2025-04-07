@@ -122,6 +122,7 @@ local function cmp_config()
             ['<Up>'] = super_prev,
         },
         sources = cmp.config.sources({
+			{ name = "marscode" },
             { name = 'nvim_lsp' },
             { name = 'nvim_lsp_signature_help' },
             { name = 'nvim_lua' },
@@ -133,7 +134,6 @@ local function cmp_config()
             -- { name = 'snippy' }, -- For snippy users.
         }, {
             { name = 'buffer' },
-	    { name = "codeverse"} -- codeverse Source
         }),
         formatting = {
             format = lspkind.cmp_format({
@@ -151,10 +151,10 @@ local function cmp_config()
             })
         },
         preselect = cmp.PreselectMode.None,
-	experimental = {
-  		-- 开启虚拟文本 for codeverse Source
-    		ghost_text = true
-  	}
+		experimental = {
+			-- 开启虚拟文本 for codeverse Source
+				ghost_text = true
+		}
     })
 
     -- Set configuration for specific filetype.

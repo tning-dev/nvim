@@ -43,3 +43,6 @@ luac.out
 .luarc.json
 
 pack
+
+# plugin filter
+lua/plugins/marscode.lua
