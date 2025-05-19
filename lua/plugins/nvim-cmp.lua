@@ -122,7 +122,7 @@ local function cmp_config()
             ['<Up>'] = super_prev,
         },
         sources = cmp.config.sources({
-			{ name = "marscode" },
+			{ name = "trae" },
             { name = 'nvim_lsp' },
             { name = 'nvim_lsp_signature_help' },
             { name = 'nvim_lua' },
